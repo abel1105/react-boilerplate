@@ -1,26 +1,16 @@
 import React from 'react';
-import logo from '../../images/logo.svg';
-import s from './index.module.scss';
+import { HashRouter, Route } from 'react-router-dom';
+import Analytics from 'react-router-ga';
+import Homepage from '../Homepage';
 
-function Index() {
+const App = () => {
   return (
-    <div className={s.root}>
-      <header className={s.header}>
-        <img src={logo} className={s.logo} alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className={s.link}
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <HashRouter>
+      <Analytics id={process.env.REACT_APP_GOOGLE_ANALYTICS_ID}>
+        <Route path="/" exact component={Homepage} />
+      </Analytics>
+    </HashRouter>
   );
-}
+};
 
-export default Index;
+export default App;
