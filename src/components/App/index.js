@@ -1,17 +1,17 @@
 import React from 'react';
 import logo from '../../images/logo.svg';
-import './index.css';
+import s from './index.module.scss';
 
 function Index() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className={s.root}>
+      <header className={s.header}>
+        <img src={logo} className={s.logo} alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
-          className="App-link"
+          className={s.link}
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
