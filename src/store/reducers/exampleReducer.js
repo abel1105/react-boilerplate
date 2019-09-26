@@ -1,7 +1,7 @@
 import { INITIAL_EXAMPLE } from 'store/actions/exampleActions';
 
 const initialState = {
-  isInitial: false
+  isInitial: false,
 };
 
 const exampleReducer = (state = initialState, { type, payload }) => {
@@ -9,7 +9,7 @@ const exampleReducer = (state = initialState, { type, payload }) => {
     case INITIAL_EXAMPLE: {
       return {
         ...state,
-        isInitial: payload.isInitial
+        isInitial: payload.isInitial,
       };
     }
     default:

@@ -4,7 +4,7 @@ Base on: [Create React App](https://github.com/facebook/create-react-app)
 
 ## Features
 
-- [X] Prettier on IDE (.ide.eslintrc) and git pre-commit hook
+- [X] Prettier on IDE and git pre-commit hook
 - [X] CSS module and SASS
 - [X] Redux and support multiple reducers
 - [X] React router with Google Analytics track
