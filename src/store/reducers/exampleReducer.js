@@ -1,4 +1,4 @@
-import { INITIAL_EXAMPLE } from '../actions/exampleActions';
+import { INITIAL_EXAMPLE } from 'store/actions/exampleActions';
 
 const initialState = {
   isInitial: false

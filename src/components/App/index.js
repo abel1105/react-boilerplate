@@ -1,7 +1,7 @@
 import React from 'react';
 import { HashRouter, Route } from 'react-router-dom';
 import Analytics from 'react-router-ga';
-import Homepage from '../Homepage';
+import Homepage from 'components/Homepage';
 
 const App = () => {
   return (
